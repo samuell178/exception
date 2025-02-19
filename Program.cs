@@ -33,14 +33,19 @@ try
 {
     int a = 5;
     int b = 0;
-    int result = a/b;
+    int result = a / b;
     Console.WriteLine("result :" + result);
 }
-catch(DivideByZeroException )
+catch (DivideByZeroException)
 {
     Console.WriteLine("number can't be divided by zero");
 }
+catch (OverflowException)
+{
+    Console.WriteLine("number is too large")
+}
 */
+/*
 public class NumberChecker
 {
     public void checkEven(int number)
@@ -51,8 +56,12 @@ public class NumberChecker
             ArgumentException("number is not even");
             
         }
+        else{
+            Console.WriteLine("valid even number");
+        }
     }
 }
+
 class program 
 {
     static void Main(string[]args)
@@ -67,5 +76,35 @@ class program
         ){
             Console.WriteLine(ex.Message);
         }
+    }
+}*/
+
+public class ArrayHelper
+{
+    public void GetElementAt(int[] numbers, int index)
+    {
+        try
+        {
+            int element = numbers[index];
+            Console.WriteLine($"Element at index {index}: {element}");
+ 
+        }
+        catch (IndexOutOfRangeException)
+        {
+            Console.WriteLine("invalid index");
+        }
+
+
+
+    }
+}
+class program
+{
+    static void Main(string[] args)
+    {
+        ArrayHelper helper = new ArrayHelper();
+        int[] number = { 10, 20, 40, 60, };
+        helper.GetElementAt(number, 2);
+        helper.GetElementAt(number, 10);
     }
 }

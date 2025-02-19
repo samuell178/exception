@@ -12,3 +12,4 @@ C:\Users\EMAGE\Documents\welcome to c#\obj\Debug\net8.0\refint\welcome to c#.dll
 C:\Users\EMAGE\Documents\welcome to c#\obj\Debug\net8.0\welcome to c#.pdb
 C:\Users\EMAGE\Documents\welcome to c#\obj\Debug\net8.0\welcome to c#.genruntimeconfig.cache
 C:\Users\EMAGE\Documents\welcome to c#\obj\Debug\net8.0\ref\welcome to c#.dll
+C:\Users\EMAGE\Documents\welcome to c#\obj\Debug\net8.0\welcome to c#.sourcelink.json
